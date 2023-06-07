@@ -1,15 +1,14 @@
 <template>
   <v-app app class="app">
-    <v-container class="app-container">
       <v-container class="app-bar-container">
         <v-row v-if="$vuetify.display.smAndUp" justify="space-between">
-          <v-col cols="10">
+          <v-col cols="11">
             <v-btn variant="text">Home</v-btn>
             <v-btn variant="text">Projects</v-btn>
             <v-btn variant="text">DashBoard</v-btn>
             <v-btn variant="text">LeetCode</v-btn>
           </v-col>
-          <v-col cols="2">
+          <v-col cols="1">
             <v-btn icon="mdi-theme-light-dark" variant="outlined" size="small" class="theme-button"></v-btn>
           </v-col>
         </v-row>
@@ -20,7 +19,23 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-container>
+      <v-container class="main-list-container">
+        <v-row>
+          <v-col>
+            <v-card :color="dynamic" color="transparent" variant="tonal">
+              <v-card-title>
+                <div style="color: #FF6F00; margin-left: -5px;" class="text-h2 font-weight-bold">Tingyuan Cui</div>
+              </v-card-title>
+              <v-card-subtitle>
+                <div style="color: white; margin-left: -3px;" class="text-h4 font-weight-bold">This is sub-title</div>
+              </v-card-subtitle>
+              <v-card-text>
+                <div style="color: white;" class="text-h6 font-weight-bold">This is text</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
 
 
     <!-- Mobile version with dropdown menu -->
@@ -43,21 +58,25 @@
 <style>
   .app {
     background-color: black;
-    color: rgb(174, 173, 173);
-  }
-  .app-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }
   .app-bar-container {
-    /* width: 800px; */
-    display: flex;
-    align-items: center;
+    color: rgb(174, 173, 173);
+    display: inline-block;
+    justify-content: center;
+    vertical-align: middle;
+    width: 850px;
+  }
+  .main-list-container  {
+    display: inline-block;
+    justify-content: center;
+    vertical-align: middle;
+    width: 850px;
   }
   .theme-button {
     border-radius: 30%;
   }
+  
 </style>
 
 <script>
