@@ -37,7 +37,6 @@
           </v-col>
         </v-row>
       </v-container>
-      <div class="box"></div>
 
     <!-- Mobile version with dropdown menu -->
     <v-navigation-drawer v-model="drawer" temporary>
@@ -77,39 +76,6 @@
   }
   .theme-button {
     border-radius: 30%;
-  }
-  .box {
-    /* margin: 100px; */
-    /* width: 200px;
-    height: 200px; */
-    background: orange;
-    border-radius: 5px;
-  }
-  .animate-charcter{
-    text-transform: uppercase;
-    background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
-  display: inline-block;
-      font-size: 120px;
-  }
-  @keyframes textclip {
-    to {
-      background-position: 200% center;
-    }
   }
   .word-generating {
     margin: auto;
