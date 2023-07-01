@@ -73,13 +73,16 @@
 
 .MyName-container {
   height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .avatar {
-  border-top-left-radius: 20%;
-  border-top-right-radius: -10%;
-  border-bottom-left-radius: -10%;
-  border-bottom-right-radius: 20%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 5%;
   border: solid 2px;
   border-color: whitesmoke;
 }
