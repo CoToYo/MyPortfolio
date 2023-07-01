@@ -13,5 +13,8 @@ export default defineNuxtConfig({
         define: {
             'process.env.DEBUG': false,
         }
-    }
+    },
+    devServer: {
+        // host: '0.0.0.0'
+    },
 })
