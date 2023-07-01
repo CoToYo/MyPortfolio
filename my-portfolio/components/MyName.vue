@@ -1,5 +1,8 @@
 <template>
-    <a href="https://www.linkedin.com/in/tingyuan-cui-b02155204/" target="_blank"><div class="name-div">{{ title }}</div></a>
+  <!-- <a href="https://www.linkedin.com/in/tingyuan-cui-b02155204/" target="_blank">
+    <div class="name-div">{{ title }}</div>
+  </a> -->
+  <div class="name-div">{{ title }}</div>
 </template>
 
 <script setup>
@@ -63,69 +66,21 @@ onMounted(() => {
  * End: text typing animation
  */
 
+
 </script>
 
-<style lang="scss" scoped>
-    .name-div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // width: 500px;
-        height: 100px;
-    }
-
-    @keyframes tipsy {
-    0% {
-        transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-50%) translateY(-50%) rotate(360deg);
-    }
-    }
-
-    body {
-    font-family: helvetica, arial, sans-serif;
-    background-color: #2e2e31;
-    }
-
-    a {
-    color: #fff1f1;
-    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-    font-size: 80px;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: -3px;
-    margin: 0;
-    position: relative;
-    
-    top: 35%;
-    // left: 49%;
-    transform: translateX(-50%) translateY(-50%);
-    }
-
-    a:before,
-    a:after {
-    content: '';
-    padding: .9em .4em;
-    position: absolute;
-    left: 50%;
-    width: 70%;
-    top: 50%;
-    display: block;
-    border: 10px solid red;
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-    animation: 10s infinite alternate ease-in-out tipsy;
-    }
-
-    a:before {
-    border-color: #e9f900#c9f900 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-    
-    z-index: -1;
-    }
-
-    a:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #a3f600 #89f300;
-    
-    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
-    }
+<style scoped>
+.name-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.79);
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 80px;
+  font-weight: bold;
+  /* font-family: "Luckiest Guy", cursive; */
+  text-decoration: none;
+  letter-spacing: -3px;
+  /* height: 100px; */
+}
 </style>
