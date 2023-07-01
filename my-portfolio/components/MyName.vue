@@ -70,7 +70,8 @@ onMounted(() => {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 550px;
+        // width: 500px;
+        height: 100px;
     }
 
     @keyframes tipsy {
@@ -95,10 +96,10 @@ onMounted(() => {
     text-decoration: none;
     letter-spacing: -3px;
     margin: 0;
-    position: absolute;
+    position: relative;
     
-    top: 500px;
-    left: 50%;
+    top: 35%;
+    // left: 49%;
     transform: translateX(-50%) translateY(-50%);
     }
 
@@ -108,10 +109,10 @@ onMounted(() => {
     padding: .9em .4em;
     position: absolute;
     left: 50%;
-    width: 100%;
+    width: 70%;
     top: 50%;
     display: block;
-    border: 15px solid red;
+    border: 10px solid red;
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 10s infinite alternate ease-in-out tipsy;
     }
