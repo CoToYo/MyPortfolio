@@ -53,6 +53,7 @@
       </v-col>
     </v-row>
   </v-container>
+
 </template>
 
 <style>
@@ -125,6 +126,7 @@ definePageMeta({
 const navigateToNewWindow = (url) => {
   window.open(url);
 };
+
 /**
  * Start: text typing animation
  */
@@ -179,10 +181,11 @@ const wordflick = () => {
 
 onMounted(() => {
   wordflick();
+  const musicUrl = '/music/music.m4a';
 });
   /**
- * End: text typing animation
- */
+* End: text typing animation
+*/
 
 </script>
 
